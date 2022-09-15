@@ -1,0 +1,114 @@
+
+html{
+    font-size: 62,5%;
+}
+body{
+    background-color: #557F70;
+} 
+
+.logo{
+    background-image: url(../imagenes/logobanner.png);
+    width: 1150px; /* ANCHO */
+    height: 200px; /* ALTO */
+    display: block;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 180px;
+}
+.colorVerde{
+    color:#557F70;
+}
+h1{
+    color: #f0f6f4;
+    font-family: 'Cinzel', serif;
+}
+h2{
+    color: #f0f6f4;
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+}
+h3{
+    color: #f0f6f4;
+    font-family: 'Arimo', sans-serif;
+    font-weight: lighter;
+}
+.colorVerdeclaro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f0f6f4;
+    font-family: 'Arimo', sans-serif;
+}
+
+a{
+    color:#f0f6f4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+.navegableFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.flexCaja{
+    display: flex;
+}
+.menu{
+    width: 200px; /* ANCHO */
+    height: 100px; /* ALTO */
+}
+ul{
+    list-style-type:n;
+    font-family: 'Arimo', sans-serif;
+}
+.pie{
+    width: 1330px; /* ANCHO */
+    height: 30px; /* ALTO */
+    position: relative;
+    bottom: 0px;
+    color:#557F70;
+    font-weight:bold;
+    font-style: italic;
+    font-family: 'Cinzel', serif;
+    text-align: right;
+    background-color: #f0f6f4;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    margin-right: 10px;
+}
+.grilla {
+    display: grid;
+    grid-template-areas: "head head""nav nav""title title""menuLateral contactForm""foot foot";
+}
+
+.encabezado {
+    grid-area: head;
+}
+
+.navegable {
+    grid-area: nav;
+}
+
+.titulo {
+    grid-area: title;
+}
+
+.sideMenu {
+    grid-area: menuLateral;
+}
+
+.formulario {
+    grid-area: contactForm;
+}
+.piePagina { 
+    grid-area:foot; 
+} 
+/* Esto es un ID */
+#colorFondo{
+    background-color: #557F70;
+    
+}

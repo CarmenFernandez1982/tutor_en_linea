@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor en linea</title>
+    <!-- Titulo y logito que se en en el navegador -->
+    <title>Tutor en linea</title>
+    <link rel="shortcut icon" href="../Imagenes/Untitled design.png" type="image/x-icon">
+    <!-- Aca llamo al css -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="grilla"> <!-- contenedor -->
+
+        <!-- cada uno de los ítems del grid -->
+        <div class="encabezado">
+            <!-- logo -->
+            <!-- <img src="/imagenes/logobanner.png"  alt="El vector curioso" title="El vector curioso"/>  -->
+            <div class="logo"></div>
+        </div>
+
+        <div class="navegable">
+            <nav class="navegableFlex">
+                <a href="../index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="instituciones.html">Instituciones</a>
+                <a href="contacto.html">Contacto</a>
+
+            </nav>
+        </div>
+
+        <div class="titulo">
+            <h1>El vector curioso</h1>
+            <h2>Tutor en linea</h2>
+            <h3>Contacto</h3>
+        </div>
+
+        <div class=sideMenu class="menu">
+            <ul class="colorVerdeclaro">
+                <li>Física</li>
+                <li>Matemática</li>
+                <li>Recursos</li>
+                <li>Biblioteca</li>
+            </ul>
+        </div>
+
+        <div class="formulario">
+            <form class="colorVerdeclaro">
+                <!-- Campos de texto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido">
+               
+                <label for="correo">Dejanos tu correo:</label>
+                <input type="email" name="correo">
+            
+                <!-- Menu desplegable -->
+                <label for="materia">Materia</label>
+                <select name="materia">
+                    <Option value="matematica">Matemática</Option>
+                    <Option value="algebra">Algebra</Option>
+                    <Option value="fisica">Física</Option>
+                    <Option value="biofisica">Biofísica</Option>
+                </select>
+               
+                <!-- Menu selector-->
+                <label for="newsletter">Queres recibir nuestras novedades?</label>
+                <input type="radio" value="1" name="newsletter">si
+                <input type="radio" value="2" name="newsletter">no
+               
+                <label for="mensaje">Dejanos tu mensaje:</label>
+                <textarea cols="30" rows="20" name="mensaje"></textarea>
+                
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+
+        <div class="piePagina">
+            <p class="pie">Carmen Fernandez</p>
+        </div>
+    </div>
+</body>
+
+</html>
