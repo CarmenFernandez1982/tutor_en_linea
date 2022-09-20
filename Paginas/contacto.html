@@ -19,54 +19,48 @@
 
 </head>
 
-<body>
-    <div class="grilla"> <!-- contenedor -->
+<body class="contenedor">
 
-        <!-- cada uno de los ítems del grid -->
-        <div class="encabezado">
-            <!-- logo -->
-            <!-- <img src="/imagenes/logobanner.png"  alt="El vector curioso" title="El vector curioso"/>  -->
-            <div class="logo"></div>
-        </div>
+    <header class="header__contenedor">
+        <!-- logo -->
+        <div class="logo"></div>
+        <!-- navegable -->
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="instituciones.html">Instituciones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <!-- Titulo -->
+        <h1>El vector curioso</h1>
+        <h2>Tutor en linea</h2>
 
-        <div class="navegable">
-            <nav class="navegableFlex">
-                <a href="../index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="instituciones.html">Instituciones</a>
-                <a href="contacto.html">Contacto</a>
+    </header>
 
-            </nav>
-        </div>
+    <main class="main__contenedor">
 
-        <div class="titulo">
-            <h1>El vector curioso</h1>
-            <h2>Tutor en linea</h2>
-            <h3>Contacto</h3>
-        </div>
-
-        <div class=sideMenu class="menu">
+        <aside>
             <ul class="colorVerdeclaro">
                 <li>Física</li>
                 <li>Matemática</li>
                 <li>Recursos</li>
                 <li>Biblioteca</li>
             </ul>
-        </div>
+        </aside>
 
-        <div class="formulario">
+        <div>
             <form class="colorVerdeclaro">
                 <!-- Campos de texto -->
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre">
-    
+
                 <label for="apellido">Apellido:</label>
                 <input type="text" name="apellido">
-               
+
                 <label for="correo">Dejanos tu correo:</label>
                 <input type="email" name="correo">
-            
+
                 <!-- Menu desplegable -->
                 <label for="materia">Materia</label>
                 <select name="materia">
@@ -75,24 +69,27 @@
                     <Option value="fisica">Física</Option>
                     <Option value="biofisica">Biofísica</Option>
                 </select>
-               
+
                 <!-- Menu selector-->
                 <label for="newsletter">Queres recibir nuestras novedades?</label>
                 <input type="radio" value="1" name="newsletter">si
                 <input type="radio" value="2" name="newsletter">no
-               
+
                 <label for="mensaje">Dejanos tu mensaje:</label>
                 <textarea cols="30" rows="20" name="mensaje"></textarea>
-                
+
                 <input type="submit">
                 <input type="reset">
             </form>
+
         </div>
 
-        <div class="piePagina">
-            <p class="pie">Carmen Fernandez</p>
-        </div>
-    </div>
+    </main>
+
+
+    <footer class="footer__contenedor">
+        <p class="pie">Carmen Fernandez</p>
+    </footer>
 </body>
 
 </html>

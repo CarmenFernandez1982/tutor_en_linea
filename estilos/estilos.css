@@ -2,22 +2,57 @@
 html{
     font-size: 62,5%;
 }
-body{
-    background-color: #557F70;
-} 
 
 .logo{
     background-image: url(../imagenes/logobanner.png);
     width: 1150px; /* ANCHO */
     height: 200px; /* ALTO */
-    display: block;
-    position: relative;
-    margin-top: 0px;
-    margin-left: 180px;
 }
-.colorVerde{
-    color:#557F70;
+
+.contenedor{
+    display: grid;
+    background-color: #557F70;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+                        "header"
+                        "main"
+                        "footer";
 }
+
+.header__contenedor{
+    grid-area: header;
+}
+
+.header__contenedor nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main__contenedor{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+}
+
+.main__contenedor ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__contenedor div{
+    padding-left: 50px;
+}
+.main__contenedor form{
+    display: flex;
+    flex-direction: column;
+}
+.footer__contenedor{
+    grid-area: footer;
+} 
+
 h1{
     color: #f0f6f4;
     font-family: 'Cinzel', serif;
@@ -33,9 +68,6 @@ h3{
     font-weight: lighter;
 }
 .colorVerdeclaro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #f0f6f4;
     font-family: 'Arimo', sans-serif;
 }
@@ -46,15 +78,7 @@ a{
     text-decoration: none;
     text-align: center;
 }
-.navegableFlex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.flexCaja{
-    display: flex;
-}
+
 .menu{
     width: 200px; /* ANCHO */
     height: 100px; /* ALTO */
@@ -80,35 +104,18 @@ ul{
     padding-left: 0px;
     margin-right: 10px;
 }
-.grilla {
-    display: grid;
-    grid-template-areas: "head head""nav nav""title title""menuLateral contactForm""foot foot";
-}
 
-.encabezado {
-    grid-area: head;
-}
-
-.navegable {
-    grid-area: nav;
-}
-
-.titulo {
-    grid-area: title;
-}
-
-.sideMenu {
-    grid-area: menuLateral;
-}
-
-.formulario {
-    grid-area: contactForm;
-}
-.piePagina { 
-    grid-area:foot; 
+@media screen and (max-width:768px) {
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
 } 
-/* Esto es un ID */
+
+/* esto es un ID */
 #colorFondo{
-    background-color: #557F70;
-    
-}
+    background-color: #557F70; 
+} 
