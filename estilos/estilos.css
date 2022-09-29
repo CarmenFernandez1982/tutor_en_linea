@@ -3,12 +3,6 @@ html{
     font-size: 62,5%;
 }
 
-.logo{
-    background-image: url(../imagenes/logobanner.png);
-    width: 1150px; /* ANCHO */
-    height: 200px; /* ALTO */
-}
-
 .contenedor{
     display: grid;
     background-color: #557F70;
@@ -29,6 +23,13 @@ html{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.header__conteneddor__logo{
+    background-image: url(../imagenes/logobanner.png);
+    width: 1150px; /* ANCHO */
+    height: 200px; /* ALTO */
+    transform: translate(100px,0px);
 }
 
 .main__contenedor{
@@ -106,14 +107,36 @@ ul{
 }
 
 @media screen and (max-width:768px) {
-    .contenedor{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr 0.5fr;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
+    .header__conteneddor__logo{
+        background-image: url(../imagenes/Logo.png);
+        background-repeat: no-repeat;
+        width: 500px; /* ANCHO */
+        height: 400px; /* ALTO */
+        display: inline-block;
+        transform: translate(450px,0px);
+    }
+    
 } 
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 50;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.animacion{
+    animation-name: aparecer;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 /* esto es un ID */
 #colorFondo{
